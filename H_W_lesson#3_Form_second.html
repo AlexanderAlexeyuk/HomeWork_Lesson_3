@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Forms 2
+	</title>
+	<meta charset="utf-8" http-equiv="Cache-Control" content="no-cache">
+</head>
+<body>
+	<h1> Заполните две анкеты </h1>
+<form method="POST"  action="http://fe.it-academy.by/TestForm.php">
+	<fieldset>
+		<legend>
+			Личные данные
+		</legend>
+		<input type="text" name="surname" pattern="[А-Яа-яЁё]+" maxlength="25" autofocus  placeholder="Фамилия"  required><br>
+		<input type="text" name="name" pattern="[А-Яа-яЁё]+" maxlength="20" placeholder="Имя" required><br>
+		<input type="text" name="father_name" pattern="^[А-Яа-яЁё]+" maxlength="24" placeholder="Отчество" required><br>
+		<fieldset>
+			<legend>
+				Паспортные данные
+			</legend>
+			<input type="type" name="ID" required pattern="[A-Z]{2}" placeholder="AA"><br>
+			<input type="type" name="ID#" required pattern="[0-9]{7}" placeholder="1234567" maxlength="7"><br>
+
+		</fieldset>
+		<fieldset>
+			<legend>
+				Дата рождения
+			</legend>
+			<input type="text" name="birth_day" placeholder="2000" pattern="[0-9]{4}"><br>
+			<select> name="mouth_of_birth">
+				<option value="1">Январь</option>
+				<option value="2">Февраль</option>
+				<option value="3">Март</option>
+				<option value="4">Апрель</option>
+				<option value="5">Май</option>
+				<option value="6">Июнь</option>
+				<option value="7">Июль</option>
+				<option value="8">Август</option>
+				<option value="9"> Сентябрь</option>
+				<option value="10"> Октябрь</option>
+				<option value="11">Ноябрь</option>
+				<option value="12">Декабрь</option>
+			</select><br>
+			<input type="number" name="date" pattern="[0-9]{2} max="31" min="1"><br>
+
+				
+			</section> <br>
+
+
+
+<select required name="nationality[]">
+	<label><option>
+		РБ
+	</option>
+	<option>
+		РФ
+	</option>
+	<option>
+		США
+	</option>
+</select> Национальность</label>
+<p> Адрес:</p>
+<textarea>
+	
+</textarea>
+
+		</fieldset>
+
+		
+
+	<fieldset>
+		<legend>
+			Интересы
+		</legend>
+		<fieldset name="Hobbie[]">
+			<legend>
+				Хобби
+			</legend>
+			<label><input type="checkbox" name="fishing" value="fishing"> Рыбалка</label><br>
+
+			<label><input type="checkbox" name="astronomy" value="astronomy"> Астрология</label><br>
+
+			<label><input type="checkbox" name="diving" value="diving">Дайвинг</label><br>
+
+			<label><input type="checkbox" name="butterfly-collection" value="butterfly-collection">Марки</label>
+		</fieldset>
+
+
+
+
+
+
+
+		<fieldset>
+			<legend>
+				Домашние животные
+			</legend>
+			<select multiple size="	8" name="home_animal[]">
+				<optgroup label="Попугаи">
+					
+				</optgroup>
+				<option>
+					Волнистый
+				</option>
+				<option>
+					Ара
+				</option>
+				<option>
+					Неразлучник
+				</option>
+				<optgroup label="Рыбы">
+					
+				</optgroup>
+				<option>
+					Карась
+				</option>
+				<option>
+					Окунь
+				</option>
+				<option>
+					Осётр
+				</option>
+				<optgroup label="Птицы">
+					
+				</optgroup>
+				<option>
+					Вороны
+				</option>
+				<option>
+					Аист
+				</option>
+				<option>
+					Архиоптерикс
+				</option>
+			</select>
+		</fieldset>
+	</fieldset>
+
+</fieldset>
+<fieldset>
+	<legend>
+		Данные для входа и восстановления пароля
+	</legend>
+	<input type="text" name="login" maxlength="20", minlength="5" required placeholder="Логин"><br>
+
+	<input type="password" name="password" maxlength="20", minlength="10" required placeholder="Пароль" pattern="[A-Za-z0-9]" autocomplete="off">
+</fieldset>
+<fieldset>
+	<legend>
+		Координаты:
+	</legend>
+	<input type="email" name="email" placeholder="введите адрес электронной почты" required size="30px"><br>
+
+	<input type="url" name="url" placeholder="введите адрес сайта" autocomplete required size="30px">
+</fieldset>
+
+<fieldset>
+	<legend>
+		Цифры
+	</legend>
+	<input type="number" name="number" min="-2.5" max="2.5" step="0.1"><br>
+
+	<input type="range" name="line" max="10" min="1">
+</fieldset>
+
+
+<fieldset>
+	<legend>
+		Кнопка управления
+	</legend>
+	<button type="send" value ="Отправить">
+		Отправить
+	</button>
+	<button type="reset" value ="Сбросить">
+		Сбросить
+	</button> <br>
+
+	<input type="image" src="emal.jpeg" >
+</fieldset>
+
+
+
+
+</form>
+
+</body>
+</html>
